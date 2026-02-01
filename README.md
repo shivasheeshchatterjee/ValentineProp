@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AlexisRodriguezCS/ValentineProposal/main/images/heart.jpg" alt="Grid" style="display:block;margin:auto;" height="500">
+  <img src="https://github.com/shivasheeshchatterjee/ValentineProp/tree/main/images/heart.jpg" alt="Grid" style="display:block;margin:auto;" height="500">
 </p>
 <h1 align="center">A Special Message</h1>
 
@@ -86,7 +86,7 @@ From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/AlexisRodriguezCS/ValentineProposal.git
+$ git clone https://github.com/shivasheeshchatterjee/ValentineProp.git
 
 # Go into the repository
 $ cd ValentineProposal
@@ -106,8 +106,8 @@ $ npm start
 
 ## Contact
 
-Alexis Rodriguez - [LinkedIn](https://www.linkedin.com/in/alexisrodriguezcs/) - alexisrodriguezdev@gmail.com
+Alexis Rodriguez - [LinkedIn](https://www.linkedin.com/in/shivasheeshchatterjee/) - chatterjee.shivasheesh@gmail.com
 
-Project Link: [https://github.com/AlexisRodriguezCS/ValentineProposal.git](https://github.com/AlexisRodriguezCS/ValentineProposal.git)
+Project Link: [https://github.com/shivasheeshchatterjee/ValentineProp.git](https://github.com/shivasheeshchatterjee/ValentineProp.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
