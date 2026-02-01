@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-<h1 align="center">💌 Sushi – A Little Love App</h1>
+<h1 align="center">💌 A Little Valentine Proposal App for Sushi.</h1>
 
 <p align="center">
   A playful, interactive Valentine-style web app built with React  
@@ -77,8 +77,8 @@ src/ ├── components/ │   ├── Asking.js      → Proposal screen lo
 ### Installation
 
 bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/shivasheeshchatterjee/ValentineProp.git
+cd ValentineProp
 
 npm install
 npm start
