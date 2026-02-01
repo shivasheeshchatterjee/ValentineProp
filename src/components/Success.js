@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import kisses from "../kisses.gif";
+import kiss from "../kiss.gif";
 import * as htmlToImage from "html-to-image";
 
 const Heart = ({ left, delay, size }) => (
@@ -66,7 +66,7 @@ const Success = () => {
         ))}
       </div>
 
-      <img className="App-gif" src={kisses} alt="Kisses" />
+      <img className="App-gif" src={kiss} alt="Kisses" />
 
       {!confirmed ? (
         <>

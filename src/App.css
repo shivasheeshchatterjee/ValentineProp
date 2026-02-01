@@ -245,3 +245,18 @@
   font-size: 16px;
   z-index: 9999;
 }
+
+.watermark {
+  position: fixed;
+  bottom: 10px;
+  right: 14px;
+
+  font-size: 11px;
+  opacity: 0.60;        
+  color: #716f6f;
+
+  pointer-events: none; 
+  user-select: none;
+
+  letter-spacing: 0.5px;
+}

@@ -1,9 +1,12 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import "./App.css";
 import Success from "./components/Success";
 import Asking from "./components/Asking";
-import flowerBear from "./flowerBear.gif";
-import madBear from "./madBear.gif";
+import flower from "./flower.gif";
+import attention from "./attention.gif";
+import blinking from "./blinking.gif";
+import running from "./running.gif";
+import badGirl from "./badgirl.gif";
 import confetti from "canvas-confetti";
 import popSound from "./assets/pop.mp3";
 import chimeSound from "./assets/chime.mp3";
@@ -24,9 +27,39 @@ const App = () => {
   const [noScale, setNoScale] = useState(1);
   const [rejectCount, setRejectCount] = useState(0);
   const [soundOn, setSoundOn] = useState(true);
+  const [startGif, setStartGif] = useState(attention);
+  const [rejectGif, setRejectGif] = useState(running);
 
   const pop = useMemo(() => new Audio(popSound), []);
   const chime = useMemo(() => new Audio(chimeSound), []);
+
+  useEffect(() => {
+  if (accepted || rejected) return;
+
+  const sequence = [attention, flower, blinking];
+  let step = 0;
+
+  const timer = setInterval(() => {
+    step = (step + 1) % sequence.length; // 🔁 loop
+    setStartGif(sequence[step]);
+  }, 1800);
+
+  return () => clearInterval(timer);
+}, [accepted, rejected]);
+
+  useEffect(() => {
+  if (!rejected) return;
+
+  const sequence = [running, badGirl];
+  let step = 0;
+
+  const timer = setInterval(() => {
+    step = (step + 1) % sequence.length; // 🔁 loop
+    setRejectGif(sequence[step]);
+  }, 1800);
+
+  return () => clearInterval(timer);
+}, [rejected]);
   // Handler for accepting the proposal
   const handleAccept = () => {
   // 🎉 confetti burst
@@ -114,7 +147,7 @@ const App = () => {
         </button>
         {!accepted && (
           <Asking
-            gif={rejected ? madBear : flowerBear}
+            gif={rejected ? rejectGif : startGif}
             altText={rejected ? "Rejected Bear" : "I love you Bear"}
             handleAccept={handleAccept}
             handleReject={handleReject}
@@ -128,6 +161,7 @@ const App = () => {
         {/* She said YES! */}
         {accepted && <Success />}
       </div>
+      <div className="watermark">Made with ❤️ by Shiva</div>
     </div>
   );
 };
