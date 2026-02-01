@@ -103,7 +103,7 @@ $ npm start
 
 ## Contact
 
-Alexis Rodriguez - [LinkedIn](https://www.linkedin.com/in/shivasheeshchatterjee/) - chatterjee.shivasheesh@gmail.com
+Shivasheesh Chatterjee - [LinkedIn](https://www.linkedin.com/in/shivasheeshchatterjee/) - chatterjee.shivasheesh@gmail.com
 
 Project Link: [https://github.com/shivasheeshchatterjee/ValentineProp.git](https://github.com/shivasheeshchatterjee/ValentineProp.git)
 
