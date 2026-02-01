@@ -67,6 +67,13 @@ src/ ├── components/ │   ├── Asking.js      → Proposal screen lo
 
 ---
 
+## 🌐 Live Demo
+https://sushi-valentine.netlify.app/
+
+Deployed on Netlify with automatic CI/CD.
+
+---
+
 ## 💻 Getting Started (Local Setup)
 
 ### Prerequisites
