@@ -1,8 +1,5 @@
 <a name="readme-top"></a>
 
-<p align="center">
-  <img src="[https://github.com/shivasheeshchatterjee/ValentineProp/main/images/heart.jpg](https://github.com/shivasheeshchatterjee/ValentineProp/blob/main/images/heart.jpg)" alt="Grid" style="display:block;margin:auto;" height="500">
-</p>
 <h1 align="center">A Special Message</h1>
 
 <!-- TABLE OF CONTENTS -->
